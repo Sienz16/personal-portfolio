@@ -1,11 +1,36 @@
 ---
-import Welcome from '../components/Welcome.astro';
 import Layout from '../layouts/Layout.astro';
-
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+import Nav from '../components/layout/Nav';
+import Cursor from '../components/ui/Cursor';
+import Hero from '../components/sections/Hero';
+import About from '../components/sections/About';
+import Experience from '../components/sections/Experience';
+import Projects from '../components/sections/Projects';
+import Skills from '../components/sections/Skills';
+import Blog from '../components/sections/Blog';
+import Contact from '../components/sections/Contact';
+import Footer from '../components/layout/Footer';
 ---
 
 <Layout>
-	<Welcome />
+  <Cursor client:load />
+  <Nav client:load />
+
+  <main>
+    <Hero client:load />
+    <div class="w-full h-px bg-border"></div>
+    <About client:visible />
+    <div class="w-full h-px bg-border"></div>
+    <Experience client:visible />
+    <div class="w-full h-px bg-border"></div>
+    <Projects client:visible />
+    <div class="w-full h-px bg-border"></div>
+    <Skills client:visible />
+    <div class="w-full h-px bg-border"></div>
+    <Blog client:visible />
+    <div class="w-full h-px bg-border"></div>
+    <Contact client:visible />
+  </main>
+
+  <Footer client:visible />
 </Layout>
