@@ -70,7 +70,7 @@ export default function About() {
     return () => ctx.revert();
   }, []);
 
-  const marqueeText = 'Design \u00B7 Develop \u00B7 Deploy \u00B7 ';
+  const marqueeText = 'Research \u00B7 Build \u00B7 Ship \u00B7 ';
 
   return (
     <section ref={containerRef} id="about" className="relative py-32 overflow-hidden">
@@ -92,28 +92,28 @@ export default function About() {
           {/* Text */}
           <div className="about-content">
             <p className="text-xl md:text-2xl font-display text-primary mb-8 leading-relaxed">
-              I build things for the web with a focus on craft, performance, and
-              thoughtful interaction design.
+              I enjoy turning ideas into reliable software, from academic
+              research work to production-ready web platforms.
             </p>
             <p className="text-muted leading-relaxed mb-6">
-              With a background spanning frontend and full-stack development, I
-              specialize in creating digital experiences that feel intentional
-              and polished. Every animation, every transition, every pixel serves
-              a purpose.
+              My journey started with Software Engineering studies at University
+              Malaysia Sabah and continued through research and industry roles.
+              As a Research Assistant at CCRG UMS, I worked on AR/VR and Sabah
+              culture documentation through literature reviews and structured
+              reports.
             </p>
             <p className="text-muted leading-relaxed">
-              When I'm not coding, you'll find me exploring design systems,
-              contributing to open source, or experimenting with creative coding
-              and generative art.
+              I later joined LearningTigers as an intern and now work at
+              JesseltonPixel. Across these roles, I have developed a strong
+              preference for Laravel, React/Next.js, Vue, and relational
+              databases like MySQL and PostgreSQL.
             </p>
           </div>
 
           {/* Image */}
           <div className="about-image-wrapper relative overflow-hidden rounded-sm">
             <div className="about-image aspect-[4/5] bg-surface border border-border flex items-center justify-center">
-              <span className="font-mono text-muted text-sm">
-                [ your photo here ]
-              </span>
+              <span className="font-mono text-muted text-sm">[ add your professional photo ]</span>
             </div>
             {/* Decorative corner accent */}
             <div className="absolute top-4 left-4 w-8 h-8 border-t border-l border-accent/40" />
@@ -124,10 +124,10 @@ export default function About() {
         {/* Stats */}
         <div className="stats-grid grid grid-cols-2 md:grid-cols-4 gap-8 mt-20 pt-12 border-t border-border">
           {[
-            { value: '5+', label: 'Years Experience' },
-            { value: '30+', label: 'Projects Delivered' },
-            { value: '10+', label: 'Technologies' },
-            { value: '\u221E', label: 'Curiosity' },
+            { value: '2025', label: 'Graduated (UMS)' },
+            { value: '1 yr', label: 'Research Assistant' },
+            { value: '6+', label: 'Production Projects' },
+            { value: 'Now', label: 'Active at JesseltonPixel' },
           ].map(({ value, label }) => (
             <div key={label} className="stat-item">
               <span className="block font-display text-4xl md:text-5xl text-accent mb-2">

@@ -6,9 +6,9 @@ import SectionLabel from '../ui/SectionLabel';
 gsap.registerPlugin(ScrollTrigger);
 
 const socialLinks = [
+  { label: 'Website', href: 'https://ramadanku.my', icon: 'WEB' },
   { label: 'GitHub', href: '#', icon: 'GH' },
   { label: 'LinkedIn', href: '#', icon: 'LI' },
-  { label: 'Twitter / X', href: '#', icon: 'X' },
   { label: 'Email', href: 'mailto:hello@example.com', icon: '@' },
 ];
 
@@ -78,20 +78,21 @@ export default function Contact() {
   return (
     <section ref={containerRef} id="contact" className="py-32">
       <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-24">
-        <SectionLabel number="07" title="Contact" />
+        <SectionLabel number="06" title="Contact" />
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24">
           {/* Left: CTA + socials */}
           <div>
             <p className="contact-cta font-display text-3xl md:text-4xl text-primary leading-snug mb-8">
-              Let's build something
+              Let's build a product
               <br />
-              <span className="text-accent">remarkable</span> together.
+              <span className="text-accent">that users remember</span>.
             </p>
 
             <p className="contact-cta text-muted leading-relaxed mb-12">
-              Have a project in mind, want to collaborate, or just want to say
-              hello? I'd love to hear from you.
+              I am open to software engineering opportunities, freelance web
+              work, and collaborations where quality and shipping speed both
+              matter.
             </p>
 
             <div className="social-links flex gap-4">

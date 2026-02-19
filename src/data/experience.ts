@@ -8,35 +8,27 @@ export interface Experience {
 
 export const experiences: Experience[] = [
   {
-    company: 'Acme Corp',
-    role: 'Senior Frontend Developer',
-    period: '2024 — Present',
+    company: 'JesseltonPixel Sdn Bhd',
+    role: 'Software Engineer',
+    period: 'Sep 2025 - Present',
     description:
-      'Leading frontend architecture for a SaaS platform serving 50k+ users. Spearheaded migration from legacy jQuery codebase to React with TypeScript, reducing bundle size by 40%.',
-    technologies: ['React', 'TypeScript', 'Next.js', 'GraphQL'],
+      'Building production web solutions with Laravel and modern JavaScript frameworks. Collaborating with design and product teams to ship maintainable features for real client needs.',
+    technologies: ['Laravel', 'Next.js', 'React', 'MySQL', 'PostgreSQL'],
   },
   {
-    company: 'Startup Studio',
-    role: 'Full-Stack Developer',
-    period: '2022 — 2024',
+    company: 'LearningTigers Sdn Bhd',
+    role: 'Software Engineering Intern',
+    period: 'Mar 2025 - Aug 2025',
     description:
-      'Built and shipped three client-facing products from zero to production. Implemented real-time collaboration features and designed scalable API architectures.',
-    technologies: ['Node.js', 'React', 'PostgreSQL', 'AWS'],
+      'Supported product delivery across web projects, turning requirements into working features and improving existing modules with cleaner, more reliable code.',
+    technologies: ['Laravel', 'Vue', 'JavaScript', 'MySQL', 'Git'],
   },
   {
-    company: 'Digital Agency',
-    role: 'Frontend Developer',
-    period: '2021 — 2022',
+    company: 'Creative Computing Research Group (CCRG), UMS',
+    role: 'Research Assistant',
+    period: '2024 - 2025',
     description:
-      'Developed interactive marketing sites and web applications for enterprise clients. Focused on performance optimization and accessibility compliance.',
-    technologies: ['Vue.js', 'GSAP', 'Tailwind', 'Figma'],
-  },
-  {
-    company: 'Freelance',
-    role: 'Web Developer',
-    period: '2020 — 2021',
-    description:
-      'Delivered custom websites and e-commerce solutions for small businesses. Built a personal brand and client pipeline from scratch.',
-    technologies: ['JavaScript', 'WordPress', 'Shopify', 'CSS'],
+      'Conducted literature reviews and documentation for AR/VR and Sabah cultural studies. Produced structured research outputs for the team and supporting stakeholders.',
+    technologies: ['Documentation', 'AR/VR', 'Research', 'Academic Writing'],
   },
 ];

@@ -10,52 +10,43 @@ export interface Project {
 
 export const projects: Project[] = [
   {
-    title: 'Dashflow',
+    title: 'Ramadanku',
     description:
-      'A real-time analytics dashboard with customizable widgets, live data streams, and collaborative team features.',
-    tags: ['React', 'TypeScript', 'D3.js', 'WebSocket'],
+      'A public web platform focused on Ramadan-related utilities and content, built to be practical, fast, and easy to use on mobile and desktop.',
+    tags: ['Laravel', 'Next.js', 'React', 'MySQL'],
     featured: true,
-    link: '#',
-    github: '#',
+    link: 'https://ramadanku.my',
   },
   {
-    title: 'Notecraft',
+    title: 'FKI Event Center',
     description:
-      'Minimal note-taking app with markdown support, offline sync, and a beautiful distraction-free writing experience.',
-    tags: ['Next.js', 'Prisma', 'MDX', 'Tailwind'],
+      'Event management system that streamlines event setup, participant coordination, and operational tracking for academic and organizational use.',
+    tags: ['Laravel', 'PostgreSQL', 'Tailwind', 'JavaScript'],
     featured: true,
-    link: '#',
-    github: '#',
   },
   {
-    title: 'Palette Lab',
+    title: 'Badminton App (Web)',
     description:
-      'AI-powered color palette generator that creates harmonious schemes from natural language descriptions.',
-    tags: ['Python', 'FastAPI', 'React', 'OpenAI'],
+      'A web application for badminton-focused workflows, including scheduling and information management with a straightforward admin flow.',
+    tags: ['Laravel', 'MySQL', 'Blade', 'JavaScript'],
     featured: true,
-    link: '#',
-    github: '#',
   },
   {
-    title: 'Threadline',
+    title: 'Production Print',
     description:
-      'Social reading platform where users share and discuss book highlights with a community of readers.',
-    tags: ['Svelte', 'Supabase', 'Tailwind'],
-    link: '#',
-    github: '#',
+      'Android app for jersey production workflows, improving order handling and reducing manual communication overhead.',
+    tags: ['Kotlin', 'Android', 'Firebase'],
   },
   {
-    title: 'DevProxy',
+    title: 'Bouquet Bliss',
     description:
-      'Local development proxy tool for API mocking, request interception, and response transformation.',
-    tags: ['Rust', 'CLI', 'HTTP'],
-    github: '#',
+      'Flower shop Android application with product browsing and order-friendly flows designed for practical day-to-day business usage.',
+    tags: ['Kotlin', 'Android', 'Firebase'],
   },
   {
-    title: 'Motion Kit',
+    title: 'CCRG Research Documentation',
     description:
-      'Open-source animation library for React, providing declarative scroll-triggered animations with zero config.',
-    tags: ['React', 'GSAP', 'TypeScript', 'NPM'],
-    github: '#',
+      'A research documentation initiative covering AR/VR and Sabah culture references, focused on structured evidence collection and reporting.',
+    tags: ['Research', 'Documentation', 'AR/VR'],
   },
 ];

@@ -10,33 +10,33 @@ export interface Skill {
 
 export const skillCategories: SkillCategory[] = [
   {
-    category: 'Frontend',
+    category: 'Web Development',
     skills: [
-      { name: 'React / Next.js', level: 95 },
-      { name: 'TypeScript', level: 90 },
-      { name: 'CSS / Tailwind', level: 92 },
-      { name: 'GSAP / Framer Motion', level: 85 },
-      { name: 'Vue.js', level: 75 },
+      { name: 'Laravel', level: 92 },
+      { name: 'React / Next.js', level: 84 },
+      { name: 'Vue.js', level: 80 },
+      { name: 'JavaScript', level: 88 },
+      { name: 'Tailwind CSS', level: 85 },
     ],
   },
   {
-    category: 'Backend',
+    category: 'Database & Backend',
     skills: [
-      { name: 'Node.js', level: 88 },
-      { name: 'PostgreSQL', level: 80 },
-      { name: 'GraphQL', level: 78 },
-      { name: 'REST API Design', level: 90 },
-      { name: 'Python', level: 70 },
+      { name: 'MySQL', level: 90 },
+      { name: 'PostgreSQL', level: 88 },
+      { name: 'Node.js', level: 76 },
+      { name: 'Firebase', level: 74 },
+      { name: 'REST API Development', level: 84 },
     ],
   },
   {
-    category: 'Tools & Workflow',
+    category: 'Languages, Tools & Workflow',
     skills: [
-      { name: 'Git / GitHub', level: 92 },
-      { name: 'Docker', level: 75 },
-      { name: 'CI/CD', level: 80 },
-      { name: 'Figma', level: 82 },
-      { name: 'Linux / CLI', level: 85 },
+      { name: 'C++', level: 78 },
+      { name: 'Java (basic)', level: 58 },
+      { name: 'Python (basic)', level: 62 },
+      { name: 'Git', level: 88 },
+      { name: 'Docker / Linux', level: 78 },
     ],
   },
 ];

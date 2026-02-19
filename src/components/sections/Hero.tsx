@@ -5,22 +5,22 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger';
 gsap.registerPlugin(ScrollTrigger);
 
 const codeLines = [
-  { num: 1, text: '<span class="text-purple-400">const</span> Portfolio <span class="text-accent">=</span> <span class="text-white/40">()</span> <span class="text-accent">=&gt;</span> <span class="text-white/40">{</span>' },
-  { num: 2, text: '  <span class="text-purple-400">const</span> <span class="text-white/40">[</span>passion<span class="text-white/40">]</span> <span class="text-accent">=</span> <span class="text-blue-400">useState</span><span class="text-white/40">(</span><span class="text-green-400">\'frontend\'</span><span class="text-white/40">)</span>;' },
+  { num: 1, text: '<span class="text-cyan-300">const</span> Portfolio <span class="text-accent">=</span> <span class="text-white/40">()</span> <span class="text-accent">=&gt;</span> <span class="text-white/40">{</span>' },
+  { num: 2, text: '  <span class="text-cyan-300">const</span> focus <span class="text-accent">=</span> <span class="text-emerald-300">\'build practical products\'</span>;' },
   { num: 3, text: '' },
-  { num: 4, text: '  <span class="text-blue-400">useEffect</span><span class="text-white/40">(()</span> <span class="text-accent">=&gt;</span> <span class="text-white/40">{</span>' },
-  { num: 5, text: '    <span class="text-blue-400">animate</span><span class="text-white/40">({</span>' },
-  { num: 6, text: '      target: <span class="text-green-400">\'.experience\'</span>,' },
-  { num: 7, text: '      duration: <span class="text-green-400">\'5+ years\'</span>,' },
-  { num: 8, text: '      ease: <span class="text-green-400">\'power4.out\'</span>' },
+  { num: 4, text: '  <span class="text-sky-300">experience</span><span class="text-white/40">.</span><span class="text-sky-300">push</span><span class="text-white/40">({</span>' },
+  { num: 5, text: '    role: <span class="text-emerald-300">\'Software Engineer\'</span>,' },
+  { num: 6, text: '    company: <span class="text-emerald-300">\'JesseltonPixel\'</span>,' },
+  { num: 7, text: '    focus: <span class="text-emerald-300">\'Laravel + modern JS\'</span>,' },
+  { num: 8, text: '    shipping: <span class="text-emerald-300">\'production-ready systems\'</span>' },
   { num: 9, text: '    <span class="text-white/40">})</span>;' },
-  { num: 10, text: '  <span class="text-white/40">}</span>, <span class="text-white/40">[</span>passion<span class="text-white/40">])</span>;' },
+  { num: 10, text: '  <span class="text-cyan-300">return</span> <span class="text-amber-300">\'ready to collaborate\'</span>;' },
   { num: 11, text: '' },
-  { num: 12, text: '  <span class="text-purple-400">return</span> <span class="text-amber-400">&lt;DigitalExperience /&gt;</span>;' },
+  { num: 12, text: '  <span class="text-cyan-300">//</span> <span class="text-white/50">University Malaysia Sabah, Class of 2025</span>' },
   { num: 13, text: '<span class="text-white/40">}</span>;' },
 ];
 
-const techStack = ['React', 'TypeScript', 'Next.js', 'GSAP', 'Tailwind', 'Node.js'];
+const techStack = ['Laravel', 'Next.js', 'React', 'Vue', 'PostgreSQL', 'Docker'];
 
 export default function Hero() {
   const containerRef = useRef<HTMLElement>(null);
@@ -64,9 +64,6 @@ export default function Hero() {
 
       // Floating shapes
       tl.from('.float-shape', { scale: 0, opacity: 0, stagger: 0.08, duration: 0.6, ease: 'back.out(2)' }, '-=1');
-
-      // Availability badge
-      tl.from('.avail-badge', { y: 10, opacity: 0, duration: 0.5 }, '-=0.6');
 
       // Scroll indicator
       tl.from('.scroll-indicator', { opacity: 0, y: -10, duration: 0.6 }, '-=0.2');
@@ -147,20 +144,9 @@ export default function Hero() {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
           {/* Left side */}
           <div className="lg:col-span-7">
-            {/* Availability */}
-            <div className="avail-badge inline-flex items-center gap-2 px-3 py-1.5 border border-border rounded-full mb-8">
-              <span className="relative flex h-2 w-2">
-                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75" />
-                <span className="relative inline-flex rounded-full h-2 w-2 bg-green-500" />
-              </span>
-              <span className="font-mono text-[10px] text-muted tracking-wider uppercase">
-                Available for work
-              </span>
-            </div>
-
             {/* Eyebrow */}
             <p className="hero-subtitle font-mono text-accent text-sm tracking-[0.3em] uppercase mb-4">
-              Frontend Developer
+              Software Engineer
             </p>
 
             {/* Name — massive */}
@@ -180,8 +166,10 @@ export default function Hero() {
 
             {/* Description */}
             <p className="hero-role max-w-lg text-muted text-lg md:text-xl leading-relaxed mb-8">
-              Crafting elegant, performant digital experiences with an obsessive
-              attention to detail and motion.
+              Software Engineering graduate from University Malaysia Sabah
+              (2025) focused on Laravel and modern JavaScript stacks. I build
+              practical web products that balance clean architecture, speed, and
+              real user value.
             </p>
 
             {/* Tech pills */}
